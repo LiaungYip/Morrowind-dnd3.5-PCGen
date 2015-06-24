@@ -73,3 +73,5 @@ SOURCELONG:My Campaign	SOURCESHORT:My	SOURCEWEB:http://www.mywebsite.com	SOURCED
 #fractions must start with a "1/". Expressions such as CR:3/4 or CR:0.5 will not work.
 #
 #The SOURCEPAGE tag can be used to hold a reference to where you can find the race. This will be displayed in PCGen.
+
+Altmer	SORTKEY:a_base_pc	STARTFEATS:1	SIZE:M	MOVE:Walk,30	FACE:5	REACH:5	BONUS:STAT|DEX|2	SAB:Plays nice with others.	ABILITY:Special Ability|AUTOMATIC|Altmer Traits	RACETYPE:Humanoid	TYPE:Humanoid.Base.PC

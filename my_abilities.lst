@@ -51,3 +51,5 @@ SOURCELONG:My Campaign	SOURCESHORT:My	SOURCEWEB:http://www.mywebsite.com	SOURCED
 #of them, look in the List File Tag Index under the topic "Bonus tags".
 #
 #The SOURCEPAGE tag can be used to hold a reference to where you can find the feat. This will be displayed in PCGen.
+
+Altmer Traits	CATEGORY:Special Ability	ASPECT:CombatBonus|+2 to attack and damage vs. elves.	ASPECT:SaveBonus|-2 penalty on saving throws vs. fear effects.	ASPECT:SkillBonus|+2 Competence bonus on Climb checks when climbing trees.	BONUS:SITUATION|Climb=trees|2|TYPE=Racial
