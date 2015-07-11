@@ -51,6 +51,15 @@ ABILITYCATEGORY:Special Ability
 	FRACTIONALPOOL:NO
 	CATEGORY:Special Ability
 
+ABILITYCATEGORY:Racial Trait
+	VISIBLE:QUALIFY
+	EDITABLE:YES
+	EDITPOOL:YES
+	FRACTIONALPOOL:NO
+	CATEGORY:Special Ability
+	TYPE:Racial Trait.RacialTrait
+	DISPLAYLOCATION:Race Traits
+
 #Examples of a Subset or Child
 
 #ABILITYCATEGORY:My Class Ability

@@ -19,9 +19,9 @@ for f in lst_files:
     src_file = os.path.join(src_dir, f)
     dest_file = os.path.join(dest_dir, f)
 
-    if os.path.exists(dest_file):
-        logging.warn("%s already exists. Skipping." % dest_file)
-        continue
+    # if os.path.exists(dest_file):
+    #     logging.warn("%s already exists. Skipping." % dest_file)
+    #     continue
 
     w_fh = io.BytesIO()
 

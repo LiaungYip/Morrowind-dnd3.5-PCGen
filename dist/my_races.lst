@@ -1,17 +1,5 @@
 
-# CVS $Revision$ $Author$ -- Fri Oct 19 20:16:09 2012 -- reformated by prettylst.pl v1.39 (build 15052)
 SOURCELONG:My Campaign	SOURCESHORT:My	SOURCEWEB:http://www.mywebsite.com	SOURCEDATE:2008-01
-#insert your data here
-#Every line that starts with a '#' is a comment. You may want to remove these comments, if you use this file to set up
-#your own data. Remember not to put the '#' at the start of your own data, as PCGen would see it as a comment only.
-#
-#When Running PCGen, you can select "Help > Documentation > List Files > List File Tag Index > Race File tags" to find
-#out how the tags in the races file work. Some of the tags used here are global tags. You will see an alphabetical
-#listing of all PCGen tags to the left of the documentation window. You can find the global tags there as well.
-#
-#To learn the basics of coding a race, you can also visit "Help > Documentation > List Files > LST File Class > Lesson 3-6"
-#
-#
 #####Example
 #Xill
 #	STARTFEATS:1
@@ -101,4 +89,4 @@ SOURCELONG:My Campaign	SOURCESHORT:My	SOURCEWEB:http://www.mywebsite.com	SOURCED
 #fractions must start with a "1/". Expressions such as CR:3/4 or CR:0.5 will not work.
 #
 #The SOURCEPAGE tag can be used to hold a reference to where you can find the race. This will be displayed in PCGen.
-Altmer	SORTKEY:a_base_pc	STARTFEATS:1	SIZE:M	MOVE:Walk,30	FACE:5	REACH:5	BONUS:STAT|DEX|2	SAB:Plays nice with others.	ABILITY:Special Ability|AUTOMATIC|Altmer Traits	RACETYPE:Humanoid	TYPE:Humanoid.Base.PC
+Altmer	SORTKEY:a_base_pc	STARTFEATS:1	SIZE:M	MOVE:Walk,30	FACE:5	REACH:5	SAB:Plays nice with others.	ABILITY:Special Ability|AUTOMATIC|Altmer - Stat Bonuses	ABILITY:Special Ability|AUTOMATIC|Altmer - Spell Save DC Bonus	RACETYPE:Humanoid	TYPE:Humanoid.Base.PC
