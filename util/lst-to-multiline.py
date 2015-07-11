@@ -29,7 +29,7 @@ for f in lst_files:
             comment = "#" if re.match("^\s*#", line) else ""
             # Remove newline, split by tabs, and remove empty strings.
             tags = [tag for tag in line.strip().split("\t") if tag is not ""]
-            w_fh.write(comment + tags[0] + os.linesep)
+            w_fh.write(tags[0] + os.linesep)
             for tag in tags[1:]:
                 w_fh.write(comment + '\t' + tag + os.linesep)
             w_fh.write(os.linesep)
