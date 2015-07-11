@@ -22,17 +22,72 @@ SOURCELONG:My Campaign
 #looking into the documentation under List File Tag Index, you can find them listed under the topic "CHOOSE tags".
 
 # Assign the type SpecialQuality so that this shows up in the Special Qualities box.
-Altmer - Stat Bonuses
+
+Altmer - Racial Traits
 	CATEGORY:Special Ability
 	TYPE:SpecialQuality
+	VISIBLE:EXPORT
+	ABILITY:Racial Trait|AUTOMATIC|Altmer - Stat Bonuses
+	ABILITY:Racial Trait|AUTOMATIC|Altmer - Bonus Spells Per Day
+	ABILITY:Racial Trait|AUTOMATIC|Altmer - Spell Save DC Bonus
+	ABILITY:Racial Trait|AUTOMATIC|Altmer - Spell Save Penalty
+	ABILITY:Racial Trait|AUTOMATIC|Altmer - Disease Save Bonus
+	ABILITY:Racial Trait|AUTOMATIC|Altmer - Spellcraft Bonus
+	ABILITY:Racial Trait|AUTOMATIC|Altmer - Alchemy Bonus
+	DESC:+2 INT, +2 CHA, -2 CON
+	DESC:&nl;Gain bonus spells per day as if your spellcasting ability is +8 higher than it actually is. If you have multiple spellcasting classes, this bonus applies to all of them. This stacks with the bonus from the Apprentice or Atronach birthsigns.
+	DESC:&nl;+1 spell save DC's for all spells you cast.
+	DESC:&nl;-2 all saves vs. spells and spell-like abilities cast on you.
+	DESC:&nl;+2 on saving throws vs. disease.
+	DESC:&nl;Racial +2 Spellcraft and this skill is always in class.
+	DESC:&nl;Racial +2 Alchemy.
+
+# Note: The actual stat bonuses are in the races.lst file, so that they show up as 'racial bonus'.
+Altmer - Stat Bonuses
+	CATEGORY:Special Ability
+	TYPE:Racial Trait
 	DESC:Altmer have +2 INT, +2 CHA, -2 CON.
-	BONUS:STAT|INT|2
-	BONUS:STAT|CHA|2
-	BONUS:STAT|CON|-2
+
+# See http://groups.pcgen.org/viewtopic.php?f=16&t=196 for explanation
+# In theory, increasing BASESPELLSTAT adjusts number of spells cast per day, `CAST`, and the save DC, `DC`.
+# The -4 penalty to DC|ALLSPELLS offsets the save DC increase from BASESPELLSTAT.
+# However, increasing BASESPELLSTAT doesn't seem to increase the number of bonus spells. (It does increase save DC.)
+Altmer - Bonus Spells Per Day
+	CATEGORY:Special Ability
+	TYPE:Racial Trait
+	DESC:Altmer gain bonus spells per day as if their spellcasting ability is +8 higher than it actually is. If they have multiple spellcasting classes, this bonus applies to all of them. This stacks with the bonus from the Apprentice or Atronach birthsigns.
+	BONUS:STAT|BASESPELLSTAT|8
+	BONUS:STAT|BONUSSPELLSTAT|8
+	BONUS:DC|ALLSPELLS|-4
 
 Altmer - Spell Save DC Bonus
 	CATEGORY:Special Ability
-	TYPE:SpecialQuality
+	TYPE:Racial Trait
 	DESC:Altmer have +1 spell save DC's for all spells they cast.
 	BONUS:DC|ALLSPELLS|1
-	
+
+Altmer - Spell Save Penalty
+	CATEGORY:Special Ability
+	TYPE:Racial Trait
+	DESC:Altmer have a -2 penalty on all saves vs. spells and spell-like abilities cast on them.
+	ASPECT:SaveBonus|-2 penalty all saves vs. spells and spell-like abilities.
+
+Altmer - Disease Save Bonus
+	CATEGORY:Special Ability
+	TYPE:Racial Trait
+	DESC:Altmer have a +2 bonus on saving throws vs. disease.
+	ASPECT:SaveBonus|+2 bonus save vs. disease.
+
+Altmer - Spellcraft Bonus
+	CATEGORY:Special Ability
+	TYPE:Racial Trait
+	DESC:Altmer have a Racial +2 bonus to Spellcraft and this skill is always in class.
+	BONUS:SKILL|Spellcraft|2|Type=Racial
+	CSKILL:Spellcraft
+
+# TODO: Change this to actual Alchemy skill.
+Altmer - Alchemy Bonus
+	CATEGORY:Special Ability
+	TYPE:Racial Trait
+	DESC:Altmer have a Racial +2 bonus to Alchemy.
+	BONUS:SKILL|Craft (Alchemy)|2|Type=Racial

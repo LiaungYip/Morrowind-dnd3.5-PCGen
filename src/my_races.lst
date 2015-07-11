@@ -100,9 +100,10 @@ Altmer
 	MOVE:Walk,30
 	FACE:5
 	REACH:5
-	SAB:Plays nice with others.
-	ABILITY:Special Ability|AUTOMATIC|Altmer - Stat Bonuses
-	ABILITY:Special Ability|AUTOMATIC|Altmer - Spell Save DC Bonus
+	BONUS:STAT|INT|2
+	BONUS:STAT|CHA|2
+	BONUS:STAT|CON|-2
+	ABILITY:Special Ability|AUTOMATIC|Altmer - Racial Traits
 	RACETYPE:Humanoid
 	TYPE:Humanoid.Base.PC
 
