@@ -1,8 +1,7 @@
+
 # CVS $Revision$ $Author$ -- Fri Oct 19 20:16:09 2012 -- reformated by prettylst.pl v1.39 (build 15052)
 SOURCELONG:My Campaign	SOURCESHORT:My	SOURCEWEB:http://www.mywebsite.com	SOURCEDATE:2008-01
-
 #insert your data here
-
 #Every line that starts with a '#' is a comment. You may want to remove these comments, if you use this file to set up
 #your own data. Remember not to put the '#' at the start of your own data, as PCGen would see it as a comment only.
 #
@@ -14,9 +13,20 @@ SOURCELONG:My Campaign	SOURCESHORT:My	SOURCEWEB:http://www.mywebsite.com	SOURCED
 #
 #
 #####Example
-
-#Masterwork		KEY:MWORKW	TYPE:Ammunition.Weapon	COST:0	VISIBLE:QUALIFY	ITYPE:Masterwork	NAMEOPT:NORMAL		SOURCEPAGE:RSRD Equipment	PRETYPE:1,Weapon,Ammunition	!PRETYPE:1,Masterwork,Mithral,Adamantine,Darkwood		BONUS:ITEMCOST|TYPE=Ammunition|6	BONUS:ITEMCOST|TYPE=Weapon|300	BONUS:WEAPON|TOHIT|1|TYPE=Enhancement	ASSIGNTOALL:YES
-
+#Masterwork
+#	KEY:MWORKW
+#	TYPE:Ammunition.Weapon
+#	COST:0
+#	VISIBLE:QUALIFY
+#	ITYPE:Masterwork
+#	NAMEOPT:NORMAL
+#	SOURCEPAGE:RSRD Equipment
+#	PRETYPE:1,Weapon,Ammunition
+#	!PRETYPE:1,Masterwork,Mithral,Adamantine,Darkwood
+#	BONUS:ITEMCOST|TYPE=Ammunition|6
+#	BONUS:ITEMCOST|TYPE=Weapon|300
+#	BONUS:WEAPON|TOHIT|1|TYPE=Enhancement
+#	ASSIGNTOALL:YES
 #####
 #The first field in the equipmods.lst files must be the name of the modifier, after that, the tags do not need to be in any
 #special order. In the Example the equipmod is named "Masterwork".

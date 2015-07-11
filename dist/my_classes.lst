@@ -1,8 +1,7 @@
+
 # CVS $Revision$ $Author$ -- Fri Oct 19 20:16:09 2012 -- reformated by prettylst.pl v1.39 (build 15052)
 SOURCELONG:My Campaign	SOURCESHORT:My	SOURCEWEB:http://www.mywebsite.com	SOURCEDATE:2008-01
-
 #insert your data here
-
 #Every line that starts with a '#' is a comment. You may want to remove these comments, if you use this file to set up
 #your own data. Remember not to put the '#' at the start of your own data, as PCGen would see it as a comment only.
 #
@@ -14,21 +13,51 @@ SOURCELONG:My Campaign	SOURCESHORT:My	SOURCEWEB:http://www.mywebsite.com	SOURCED
 #
 #
 #####Example
-
-# Class Name	Hit Dice	Type			Abbreviation	Max Level	Source Page				Save checks bonus												Combat bonus
-#CLASS:Rogue		HD:6		TYPE:Base.PC	ABB:Rog		MAXLEVEL:20	SOURCEPAGE:ClassesII	BONUS:SAVE|BASE.Reflex|classlevel("APPLIEDAS=NONEPIC")/2+2	BONUS:SAVE|BASE.Fortitude,BASE.Will|classlevel("APPLIEDAS=NONEPIC")/3	BONUS:COMBAT|BASEAB|classlevel("APPLIEDAS=NONEPIC")*3/4|TYPE=Base.REPLACE|PREVAREQ:UseFractionalBAB,0		BONUS:VAR|ClassBABModerate|classlevel("APPLIEDAS=NONEPIC")|PREVAREQ:UseFractionalBAB,1
-# Class Name	Skill Pts/Lvl	Class Skill
-#CLASS:Rogue		STARTSKILLPTS:8	CSKILL:Appraise|Balance|Bluff|Climb|TYPE.Craft|Decipher Script|Diplomacy|Disable Device|Disguise|Escape Artist|Forgery|Gather Information|Hide|Intimidate|Jump|Knowledge (Local)|Listen|Move Silently|Open Lock|TYPE.Perform|TYPE.Profession|Search|Sense Motive|Sleight of Hand|Spot|Swim|Tumble|Use Magic Device|Use Rope
+# Class Name
+#	Hit Dice
+#	Type
+#	Abbreviation
+#	Max Level
+#	Source Page
+#	Save checks bonus
+#	Combat bonus
+#CLASS:Rogue
+#	HD:6
+#	TYPE:Base.PC
+#	ABB:Rog
+#	MAXLEVEL:20
+#	SOURCEPAGE:ClassesII
+#	BONUS:SAVE|BASE.Reflex|classlevel("APPLIEDAS=NONEPIC")/2+2
+#	BONUS:SAVE|BASE.Fortitude,BASE.Will|classlevel("APPLIEDAS=NONEPIC")/3
+#	BONUS:COMBAT|BASEAB|classlevel("APPLIEDAS=NONEPIC")*3/4|TYPE=Base.REPLACE|PREVAREQ:UseFractionalBAB,0
+#	BONUS:VAR|ClassBABModerate|classlevel("APPLIEDAS=NONEPIC")|PREVAREQ:UseFractionalBAB,1
+# Class Name
+#	Skill Pts/Lvl
+#	Class Skill
+#CLASS:Rogue
+#	STARTSKILLPTS:8
+#	CSKILL:Appraise|Balance|Bluff|Climb|TYPE.Craft|Decipher Script|Diplomacy|Disable Device|Disguise|Escape Artist|Forgery|Gather Information|Hide|Intimidate|Jump|Knowledge (Local)|Listen|Move Silently|Open Lock|TYPE.Perform|TYPE.Profession|Search|Sense Motive|Sleight of Hand|Spot|Swim|Tumble|Use Magic Device|Use Rope
 ###Block:Proficiencies
-#1	ABILITY:Special Ability|AUTOMATIC|Rogue Weapon Proficiencies|All Automatic Proficiencies	ABILITY:FEAT|AUTOMATIC|Simple Weapon Proficiency
-#1																ABILITY:FEAT|AUTOMATIC|Armor Proficiency (Light)
+#1
+#	ABILITY:Special Ability|AUTOMATIC|Rogue Weapon Proficiencies|All Automatic Proficiencies
+#	ABILITY:FEAT|AUTOMATIC|Simple Weapon Proficiency
+#1
+#	ABILITY:FEAT|AUTOMATIC|Armor Proficiency (Light)
 ###Block: Level progression
-#1											BONUS:VAR|RogueSneakAttackLVL|CL												ABILITY:Special Ability|AUTOMATIC|Trapfinding|Sneak Attack|Rogue Sneak Attack
-#2																												ABILITY:Special Ability|AUTOMATIC|Evasion
-#3											BONUS:VAR|RogueTrapSenseLVL|CL												ABILITY:Special Ability|AUTOMATIC|Trap Sense Ability|Rogue Trap Sense
-#4											BONUS:VAR|UncannyDodgeFlankingLevel|CL|TYPE=EachClass.REPLACE	BONUS:VAR|UncannyDodgeLevel|CL/4	ABILITY:Special Ability|AUTOMATIC|Uncanny Dodge ~ Base
-#10	BONUS:ABILITYPOOL|Rogue Special Ability|min(4,(CL-7)/3)
-
+#1
+#	BONUS:VAR|RogueSneakAttackLVL|CL
+#	ABILITY:Special Ability|AUTOMATIC|Trapfinding|Sneak Attack|Rogue Sneak Attack
+#2
+#	ABILITY:Special Ability|AUTOMATIC|Evasion
+#3
+#	BONUS:VAR|RogueTrapSenseLVL|CL
+#	ABILITY:Special Ability|AUTOMATIC|Trap Sense Ability|Rogue Trap Sense
+#4
+#	BONUS:VAR|UncannyDodgeFlankingLevel|CL|TYPE=EachClass.REPLACE
+#	BONUS:VAR|UncannyDodgeLevel|CL/4
+#	ABILITY:Special Ability|AUTOMATIC|Uncanny Dodge ~ Base
+#10
+#	BONUS:ABILITYPOOL|Rogue Special Ability|min(4,(CL-7)/3)
 #####
 #Class files are where each class is listed, given it's important information for the correct output and functioning of the
 #class. Each class has 2 components to it: The main class line and the class level line. The class line begins with CLASS

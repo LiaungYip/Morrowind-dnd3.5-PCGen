@@ -1,8 +1,7 @@
+
 # CVS $Revision$ $Author$ -- Fri Oct 19 20:16:09 2012 -- reformated by prettylst.pl v1.39 (build 15052)
 SOURCELONG:My Campaign	SOURCESHORT:My	SOURCEWEB:http://www.mywebsite.com	SOURCEDATE:2008-01
-
 #insert your data here
-
 #Every line that starts with a '#' is a comment. You may want to remove these comments, if you use this file to set up
 #your own data. Remember not to put the '#' at the start of your own data, as PCGen would see it as a comment only.
 #
@@ -14,9 +13,38 @@ SOURCELONG:My Campaign	SOURCESHORT:My	SOURCEWEB:http://www.mywebsite.com	SOURCED
 #
 #
 #####Example
-
-#Xill		STARTFEATS:1	SIZE:M	MOVE:Walk,40		FACE:5	REACH:5	VISION:Darkvision (60')	PREALIGN:2	LANGAUTO:Infernal		BONUS:COMBAT|AC|7|TYPE=NaturalArmor		BONUS:STAT|STR|4	BONUS:STAT|DEX|6	BONUS:STAT|CON|4	BONUS:STAT|INT|2	BONUS:STAT|WIS|2		MONCSKILL:Balance|Climb|Diplomacy|Escape Artist|Intimidate|Listen|Move Silently|Sense Motive|Spot|Tumble|Use Rope	AUTO:WEAPONPROF|Longbow|Sword (Short)|TYPE.Martial|TYPE.Simple		LEGS:2	HANDS:4	NATURALATTACKS:Claw,Weapon.Natural.Melee.Finesseable.Piercing.Slashing,*2,1d4|Claw,Weapon.Natural.Melee.Finesseable.Piercing.Slashing,*1,1d4		SAB:Implant (Ex)	SAB:Improved Grab (Ex)	SAB:Paralysis (Ex)	SAB:Planewalk (Su)	SAB:Spell Resistance (Ex)		SR:21		MONSTERCLASS:Outsider:5		RACETYPE:Outsider	HITDICEADVANCEMENT:8,15		LEVELADJUSTMENT:4	CR:6	SOURCEPAGE:MonstersT-Z
-
+#Xill
+#	STARTFEATS:1
+#	SIZE:M
+#	MOVE:Walk,40
+#	FACE:5
+#	REACH:5
+#	VISION:Darkvision (60')
+#	PREALIGN:2
+#	LANGAUTO:Infernal
+#	BONUS:COMBAT|AC|7|TYPE=NaturalArmor
+#	BONUS:STAT|STR|4
+#	BONUS:STAT|DEX|6
+#	BONUS:STAT|CON|4
+#	BONUS:STAT|INT|2
+#	BONUS:STAT|WIS|2
+#	MONCSKILL:Balance|Climb|Diplomacy|Escape Artist|Intimidate|Listen|Move Silently|Sense Motive|Spot|Tumble|Use Rope
+#	AUTO:WEAPONPROF|Longbow|Sword (Short)|TYPE.Martial|TYPE.Simple
+#	LEGS:2
+#	HANDS:4
+#	NATURALATTACKS:Claw,Weapon.Natural.Melee.Finesseable.Piercing.Slashing,*2,1d4|Claw,Weapon.Natural.Melee.Finesseable.Piercing.Slashing,*1,1d4
+#	SAB:Implant (Ex)
+#	SAB:Improved Grab (Ex)
+#	SAB:Paralysis (Ex)
+#	SAB:Planewalk (Su)
+#	SAB:Spell Resistance (Ex)
+#	SR:21
+#	MONSTERCLASS:Outsider:5
+#	RACETYPE:Outsider
+#	HITDICEADVANCEMENT:8,15
+#	LEVELADJUSTMENT:4
+#	CR:6
+#	SOURCEPAGE:MonstersT-Z
 #####
 #Xill is the name of the race. It must be the first field on each line, the remaining tags may be of any order.
 #
@@ -73,5 +101,4 @@ SOURCELONG:My Campaign	SOURCESHORT:My	SOURCEWEB:http://www.mywebsite.com	SOURCED
 #fractions must start with a "1/". Expressions such as CR:3/4 or CR:0.5 will not work.
 #
 #The SOURCEPAGE tag can be used to hold a reference to where you can find the race. This will be displayed in PCGen.
-
 Altmer	SORTKEY:a_base_pc	STARTFEATS:1	SIZE:M	MOVE:Walk,30	FACE:5	REACH:5	BONUS:STAT|DEX|2	SAB:Plays nice with others.	ABILITY:Special Ability|AUTOMATIC|Altmer Traits	RACETYPE:Humanoid	TYPE:Humanoid.Base.PC

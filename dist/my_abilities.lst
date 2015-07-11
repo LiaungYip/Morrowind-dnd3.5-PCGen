@@ -1,8 +1,7 @@
+
 # CVS $Revision$ $Author$ -- Fri Oct 19 20:16:09 2012 -- reformated by prettylst.pl v1.39 (build 15052)
 SOURCELONG:My Campaign	SOURCESHORT:My	SOURCEWEB:http://www.mywebsite.com	SOURCEDATE:2008-01
-
 #insert your data here
-
 #Every line that starts with a '#' is a comment. You may want to remove these comments, if you use this file to set up
 #your own data. Remember not to put the '#' at the start of your own data, as PCGen would see it as a comment only.
 #
@@ -20,13 +19,28 @@ SOURCELONG:My Campaign	SOURCESHORT:My	SOURCEWEB:http://www.mywebsite.com	SOURCED
 # using the CATEGORY:FEAT tag.
 # You can also use PREFEAT for any CATEGORY:FEAT, for the rest you'll need to use PREABILITY:x,CATEGORY=<category>,Foo,TYPE.Bar (x is the number)
 #####1st Example
-
-#My Ability			CATEGORY:my_abilities		TYPE:General.DataMonkey		DESC:See Text						SOURCEPAGE:Custom
-#My Second Ability	CATEGORY:Special			TYPE:MonkeyFoo			DESC:This is the great second ability.		SOURCEPAGE:Custom	PREABILITY:1,CATEGORY=my_abilities,My Ability
-
+#My Ability
+#	CATEGORY:my_abilities
+#	TYPE:General.DataMonkey
+#	DESC:See Text
+#	SOURCEPAGE:Custom
+#My Second Ability
+#	CATEGORY:Special
+#	TYPE:MonkeyFoo
+#	DESC:This is the great second ability.
+#	SOURCEPAGE:Custom
+#	PREABILITY:1,CATEGORY=my_abilities,My Ability
 ###SAMPLE FOR 'Ability by Skill'
-#Ac Ba			CATEGORY:AbilitybySkill		TYPE:AbilitybySkill.Movement	VISIBLE:YES		!PREABILITY:1,CATEGORY=AbilitybySkill,Ac Ba	PRESKILL:1,Tumble=12	PREVARLT:AbilitybySkillCount,AbilitybySkillMax	DEFINE:AbilitybySkillCount|0		DESC:<appropriate description>	BONUS:VAR|AbilitybySkillCount|1
-
+#Ac Ba
+#	CATEGORY:AbilitybySkill
+#	TYPE:AbilitybySkill.Movement
+#	VISIBLE:YES
+#	!PREABILITY:1,CATEGORY=AbilitybySkill,Ac Ba
+#	PRESKILL:1,Tumble=12
+#	PREVARLT:AbilitybySkillCount,AbilitybySkillMax
+#	DEFINE:AbilitybySkillCount|0
+#	DESC:<appropriate description>
+#	BONUS:VAR|AbilitybySkillCount|1
 #####
 #Each ability takes one line, just like a feat, and the first field must be the abilities' name. In the Example the name of the ability is My Ability.
 #When naming feats you should only use parentheses at the end of the name if the name is not duplicated elsewhere. This is
@@ -51,5 +65,4 @@ SOURCELONG:My Campaign	SOURCESHORT:My	SOURCEWEB:http://www.mywebsite.com	SOURCED
 #of them, look in the List File Tag Index under the topic "Bonus tags".
 #
 #The SOURCEPAGE tag can be used to hold a reference to where you can find the feat. This will be displayed in PCGen.
-
 Altmer Traits	CATEGORY:Special Ability	ASPECT:CombatBonus|+2 to attack and damage vs. elves.	ASPECT:SaveBonus|-2 penalty on saving throws vs. fear effects.	ASPECT:SkillBonus|+2 Competence bonus on Climb checks when climbing trees.	BONUS:SITUATION|Climb=trees|2|TYPE=Racial
